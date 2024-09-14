@@ -1,0 +1,24 @@
+
+  .header-logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius:40px ;
+    align-self: center;
+    margin-left: 170px;
+  }
+  .header-navbar{
+    background :rgb(12, 12, 12);
+    align-items: right;
+    
+  }
+  
+  .cart-count {
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    padding: 0 6px;
+    margin-left: 5px;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,80 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  .loading-animation {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Option 1: Emoji bounce */
+  .emoji {
+    font-size: 3rem;
+    animation: bounce 1s infinite alternate;
+  }
+  
+  /* Option 2: Circles changing colors */
+  .circle-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: change-color 1.5s infinite;
+  }
+  
+  .circle1 { background-color: red; }
+  .circle2 { background-color: blue; animation-delay: 0.5s; }
+  .circle3 { background-color: green; animation-delay: 1s; }
+  
+  /* Bounce animation for emoji */
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+  }
+  
+  /* Circle color change animation */
+  @keyframes change-color {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+  }
+  
+  /* Dots animation for loading message */
+  .loading-message {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .dots span {
+    animation: blink 1.4s infinite both;
+  }
+  
+  .dots span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .dots span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 0.2; }
+    20% { opacity: 1; }
+    100% { opacity: 0.2; }
+  }
+  

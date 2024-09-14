@@ -1,0 +1,49 @@
+.hero-container {
+  text-align: center;
+  background-image: url('../assets/images/cernobile-pozadi.png');
+  background-color: #080808;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  height: 520px;
+  width: 100%;
+  color: rgb(3, 3, 3);
+}
+
+.cta-btn {
+  margin-top: 20px;
+}
+
+.category-slide {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.category-slide h2 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: #080808;
+}
+
+.category-slide p {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #110707;
+}
+
+.category-images {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+.category-images img {
+  width: 180px;  /* Fixed width */
+  height: 180px; /* Fixed height */
+  object-fit: cover; /* Ensures images maintain their aspect ratio and fill the container */
+  border-radius: 10px;
+  align-content: center;
+  padding: 10px;
+}

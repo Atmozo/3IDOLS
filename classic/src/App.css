@@ -1,0 +1,391 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  /* background-color: #774343; */
+  
+  margin: 0;
+  padding-left: 0;
+  align-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Utility Classes */
+ .text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 8px; }
+.mt-2 { margin-top: 16px; }
+.mt-3 { margin-top: 24px; }
+
+.mb-1 { margin-bottom: 8px; }
+.mb-2 { margin-bottom: 16px; }
+.mb-3 { margin-bottom: 24px; }
+
+.p-1 { padding: 8px; }
+.p-2 { padding: 16px; }
+.p-3 { padding: 24px; }
+
+.primary {
+  color: #ff4081;
+}
+
+.secondary {
+  color: #03a9f4;
+}
+
+.accent {
+  color: #ff5252;
+}
+
+
+  
+
+.featured-products {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin-top: 30px;
+  background-image: url('../assets/images/download.jpg');
+}
+
+.category-navigation {
+  text-align: center;
+  margin-bottom: 20px;
+  background-image: url('../assets/images/download.jpg');
+}
+
+.category-item {
+  display: inline-block;
+  margin: 0 15px;
+  background-image: url('../assets/images/download.jpg');
+}
+
+.featured-product {
+  background-image: url('../assets/images/download.jpg');
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  animation: fadeIn 1s ease-in-out;
+  margin-bottom: 40px; /* Add space between products */
+}
+
+.featured-product.left .product-content {
+  flex-direction: row;
+}
+
+.featured-product.right .product-content {
+  flex-direction: row-reverse;
+}
+
+.product-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  padding: 17px;
+}
+
+.product-summary {
+  flex: 1;
+  max-width: 60%;
+  padding-left: 17px; /* Padding on the side of the image */
+  font-family: 'Arial', sans-serif;
+  font-size: 1.4rem; /* Slightly smaller for more text */
+  font-weight: bold;
+  line-height: 1.4;
+  color: #e7fcff;
+  text-align: left;
+  animation: typewriter 10s steps(40) 1 normal both; /* Text prints in 10 seconds */
+}
+
+.product-summary p {
+  margin-top: 15px; /* Space between paragraphs */
+  font-size: 1.2rem; /* Slightly smaller font size for description */
+}
+
+img {
+  width: 250px; /* Smaller image */
+  height: 200px;
+  object-fit: cover;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .featured-product {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .product-content {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-summary {
+    max-width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0;
+  }
+}
+.blog-section {
+  margin: 20px 0;
+  text-align: center;
+  color: #080808;
+  
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.blog-tip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #0a0a0a;
+  border-radius: 8px;
+  color: #85c5ce;
+}
+
+.large-img1 {
+  width: 240px;
+  height: 240px;
+  margin-bottom: 20px;
+}
+
+.tip-content {
+  text-align: center;
+}
+
+.tip-content h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.tip-content p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+
+.newsletter-signup {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.newsletter-signup input {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter-signup button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product-card {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card h4 {
+  margin-top: 1rem;
+}
+
+.product-card p {
+  color: #888;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.shopping-cart {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.shopping-cart .cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.shopping-cart .cart-item-image {
+  max-width: 50px;
+  margin-right: 1rem;
+}
+
+.shopping-cart h4 {
+  margin: 0;
+}
+
+.shopping-cart p {
+  color: #888;
+}  
+/* Footer.css */
+.footer {
+  background-color: #080808;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  margin: 0 15px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #007bff;
+}
+
+.social-media {
+  margin-bottom: 15px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.social-media a:hover {
+  color: #007bff;
+}
+
+.footer p {
+  font-size: 16px;
+  color: #777;
+  margin-top: 20px;
+}
+
+
+/* Revies */
+.reviews-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 1 row, 4 columns */
+  gap: 20px;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0e0d0d;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+}
+
+.img-fluid1 {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 90px;
+}
+
+.review-card h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #85c5ce;
+}
+
+.review-card p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-bottom: 5px;
+  color: #ccc;
+}
