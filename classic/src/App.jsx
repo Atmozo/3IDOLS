@@ -3,22 +3,22 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './components/CartContex.jsx';
-import Loading from '../src/Loading';
+import Loading from '../src/Loading.jsx';
 
 
-const Header = React.lazy(() => import('./components/Header'));
-const Footer = React.lazy(() => import('./components/Footer'));
-const CartPage = React.lazy(() => import('./pages/CartPage')); 
+const Header = React.lazy(() => import('./components/Header.jsx'));
+const Footer = React.lazy(() => import('./components/Footer.jsx'));
+const CartPage = React.lazy(() => import('./pages/CartPage.jsx')); 
 
 
-const Homepage = React.lazy(() => import('./pages/Homepage'));
-const Jeans = React.lazy(() => import('./pages/Jeans'));
-const Belts = React.lazy(() => import('./pages/Belts'));
-const Caps = React.lazy(() => import('./pages/Caps'));
-const Garments = React.lazy(() => import('./pages/Garments'));
-const Jackets = React.lazy(() => import('./pages/Jackets'));
-const Latest = React.lazy(() => import('./pages/Latest'));
-const SummerWear = React.lazy(() => import('./pages/SummerWear'));
+const Homepage = React.lazy(() => import('./pages/HomePage.jsx'));
+const Jeans = React.lazy(() => import('./pages/Jeans.jsx'));
+const Belts = React.lazy(() => import('./pages/Belts.jsx'));
+const Caps = React.lazy(() => import('./pages/Caps.jsx'));
+const Garments = React.lazy(() => import('./pages/Garments.jsx'));
+const Jackets = React.lazy(() => import('./pages/Jackets.jsx'));
+const Latest = React.lazy(() => import('./pages/Latest.jsx'));
+const SummerWear = React.lazy(() => import('./pages/SummerWear.jsx'));
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
