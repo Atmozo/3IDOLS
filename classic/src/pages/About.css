@@ -1,0 +1,20 @@
+.about-container {
+  max-width: 800px;    /* Limit maximum width */
+  margin: 0 auto;      /* Center the container */
+  padding: 20px;       /* Add padding */
+  text-align: center;   /* Center the text */
+  background-color: #000000fd; /* Optional background color */
+  border-radius: 8px;  /* Rounded corners */
+  box-shadow: 0 4px 8px rgb(33, 255, 4); /* Subtle shadow */
+}
+
+.about-title {
+  font-size: 2rem;      /* Larger title */
+  font-weight: bold;    /* Bold title */
+  margin-bottom: 1rem;  /* Space below title */
+}
+
+.about-text {
+  font-size: 1rem;      /* Base font size */
+  line-height: 1.5;     /* Better readability */
+}

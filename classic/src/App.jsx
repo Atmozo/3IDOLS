@@ -5,12 +5,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './components/CartContex.jsx';
 import Loading from '../src/Loading';
 
-// Lazy load the components
+
 const Header = React.lazy(() => import('./components/Header'));
 const Footer = React.lazy(() => import('./components/Footer'));
-const CartPage = React.lazy(() => import('./pages/CartPage')); // Add CartPage
+const CartPage = React.lazy(() => import('./pages/CartPage')); 
 
-// Lazy load the pages
+
 const Homepage = React.lazy(() => import('./pages/Homepage'));
 const Jeans = React.lazy(() => import('./pages/Jeans'));
 const Belts = React.lazy(() => import('./pages/Belts'));
@@ -23,12 +23,12 @@ const SummerWear = React.lazy(() => import('./pages/SummerWear'));
 function App() {
   const [cartItems, setCartItems] = useState([]);
 
-  // Add to cart logic
+
   const handleAddToCart = (product) => {
     setCartItems((prevItems) => [...prevItems, product]);
   };
 
-  // Remove from cart logic
+  
   const handleRemoveFromCart = (product) => {
     setCartItems((prevItems) =>
       prevItems.filter((item) => item.id !== product.id)
@@ -38,7 +38,9 @@ function App() {
   return (
     <CartProvider>
     <Router>
+
       <div className="App">
+        
         <Suspense fallback={<Loading />}>
           <Header cartItems={cartItems} /> {/* Pass cartItems to Header */}
           <Routes>
@@ -63,6 +65,7 @@ function App() {
               }
             />
           </Routes>
+
           <Footer />
         </Suspense>
       </div>

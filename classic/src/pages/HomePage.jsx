@@ -5,6 +5,7 @@ const FeaturedProducts = React.lazy(() => import('../components/FeaturedProducts
 const BlogSection = React.lazy(() => import('../components/BlogSection'));
 const NewsletterSignup = React.lazy(() => import('../components/NewsletterSignup'));
 const ReviewsSection  = React.lazy(() => import('../components/ReviewsSection'));
+
 const Homepage = () => {
   return (
     <div>
@@ -25,6 +26,7 @@ const Homepage = () => {
       </Suspense>
 
       <Suspense fallback={<div>Loading Newsletter Signup...</div>}>
+      
         <NewsletterSignup />
       </Suspense>
     </div>

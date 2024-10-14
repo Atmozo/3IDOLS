@@ -93,9 +93,11 @@ const HeroSection = () => {
 
   return (
     <div className="hero-container">
-      <h1>Welcome to 3IDOLS (VGF) DRIPSTORE</h1>
-      <p>Discover the best products here. Look Good, Feel Good. It's our duty to dress you.</p>
-      <Button variant="primary" className="cta-btn">SHOP NOW</Button>
+      <h1>VGF Drip: Where Style Meets Street Culture.</h1>
+      <h6>
+
+Step into the world of VGF Drip—where fashion is a lifestyle and every piece is crafted for the bold, the fearless, and the trendsetters. From sleek, urban essentials to statement pieces that turn heads, VGF is more than just clothing. It’s a vibe. Embrace the drip, express your individuality, and elevate your streetwear game with the freshest fits. Join the VGF movement, because real style is all about attitude.</h6>
+      
       
 
       <div className="category-slide">

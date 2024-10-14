@@ -47,3 +47,13 @@
   align-content: center;
   padding: 10px;
 }
+
+h6{
+  font-family: 'Cinzel', serif; /* Example of a strong, ancient-style font */
+  font-size: 20px;
+  color: #050505; /* Dragon-like fiery red */
+  
+  letter-spacing: 2px; /* Makes text more impactful */
+   /* Optional textured background */
+}
+
