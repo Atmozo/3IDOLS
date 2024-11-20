@@ -1,13 +1,13 @@
 import React, { Suspense, useEffect, useState } from 'react';
 
-// Lazy-loaded components
+
 const HeroSection = React.lazy(() => import('../components/HeroSection'));
 const FeaturedProducts = React.lazy(() => import('../components/FeaturedProducts'));
 const BlogSection = React.lazy(() => import('../components/BlogSection'));
 const NewsletterSignup = React.lazy(() => import('../components/NewsletterSignup'));
 const ReviewsSection = React.lazy(() => import('../components/ReviewsSection'));
 
-// Lazy-loaded wrapper with animation
+
 const LazyLoadWrapper = ({ children, fallback, className }) => {
   const [isVisible, setIsVisible] = useState(false);
 
