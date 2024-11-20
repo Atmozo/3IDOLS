@@ -1,12 +1,17 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaWhatsapp, FaGithub, FaLinkedin } from 'react-icons/fa';
+import MyAzureMap from './MyAzureMap';
 
 const Footer = () => {
   return (
     <footer className="footer">
+      <div>
+        <MyAzureMap
+         />
+      </div>
       <div className="footer-links">
        
-      <a>CONTACT US @</a>
+      
       </div>
 
       <div className="social-media">
